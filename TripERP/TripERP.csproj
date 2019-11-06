@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TripERP</RootNamespace>
+    <AssemblyName>TripERP</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.DSOFramer">
+      <HintPath>..\AxInterop.DSOFramer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.3.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Dev\TripERP\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.3.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountMgt\AccountTitleMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\AccountTitleMgmt.Designer.cs">
+      <DependentUpon>AccountTitleMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMgt\CurrentAccountDepositWithdrawalMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\CurrentAccountDepositWithdrawalMgmt.Designer.cs">
+      <DependentUpon>CurrentAccountDepositWithdrawalMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMgt\CurrentAccountMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\CurrentAccountMgmt.Designer.cs">
+      <DependentUpon>CurrentAccountMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMgt\FinancialIncomeExpenseReportMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\FinancialIncomeExpenseReportMgmt.Designer.cs">
+      <DependentUpon>FinancialIncomeExpenseReportMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMgt\ReceiptsPaymentReportMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\ReceiptsPaymentReportMgmt.Designer.cs">
+      <DependentUpon>ReceiptsPaymentReportMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMgt\SlipMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMgt\SlipMgmt.Designer.cs">
+      <DependentUpon>SlipMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\AirportInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\AirportInfoMgt.Designer.cs">
+      <DependentUpon>AirportInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\CommonCodeMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\CommonCodeMgt.designer.cs">
+      <DependentUpon>CommonCodeMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\CurrencyCodeMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\CurrencyCodeMgt.designer.cs">
+      <DependentUpon>CurrencyCodeMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\DepositNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\DepositNotificationForm.Designer.cs">
+      <DependentUpon>DepositNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\EmployeeInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\EmployeeInfoMgt.Designer.cs">
+      <DependentUpon>EmployeeInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\EmployeeMenuInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\EmployeeMenuInfoMgt.Designer.cs">
+      <DependentUpon>EmployeeMenuInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\ExchangeRateMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\ExchangeRateMgt.Designer.cs">
+      <DependentUpon>ExchangeRateMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\MenuInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\MenuInfoMgt.Designer.cs">
+      <DependentUpon>MenuInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\MessageTemplateMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\MessageTemplateMgt.Designer.cs">
+      <DependentUpon>MessageTemplateMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\NationCodeMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\NationCodeMgt.designer.cs">
+      <DependentUpon>NationCodeMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\PopUpSendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\PopUpSendMail.Designer.cs">
+      <DependentUpon>PopUpSendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\PopUpSendSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\PopUpSendSMS.Designer.cs">
+      <DependentUpon>PopUpSendSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\PurchaseListFileInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\PurchaseListFileInfoMgt.Designer.cs">
+      <DependentUpon>PurchaseListFileInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\RateMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\RateMgt.designer.cs">
+      <DependentUpon>RateMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\RegionCodeMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\RegionCodeMgmt.Designer.cs">
+      <DependentUpon>RegionCodeMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\SendHistoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\SendHistoryList.Designer.cs">
+      <DependentUpon>SendHistoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonTask\UserAccountMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonTask\UserAccountMgt.Designer.cs">
+      <DependentUpon>UserAccountMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AddressCaller.cs" />
+    <Compile Include="Common\ComboBoxItem.cs" />
+    <Compile Include="Common\CommonCodeItem.cs" />
+    <Compile Include="Common\DbHelper.cs" />
+    <Compile Include="Common\EmailValidation.cs" />
+    <Compile Include="Common\EncryptMgt.cs" />
+    <Compile Include="Common\ExcelColumnDictionary.cs" />
+    <Compile Include="Common\ExcelHelper.cs" />
+    <Compile Include="Common\ExcelImporter.cs" />
+    <Compile Include="Common\Global.cs" />
+    <Compile Include="Common\HashGenerate.cs" />
+    <Compile Include="Common\KeyValue.cs" />
+    <Compile Include="Common\MessageBoxEx.cs" />
+    <Compile Include="Common\Pagination.cs" />
+    <Compile Include="Common\PopUpResultMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\PopUpResultMessage.Designer.cs">
+      <DependentUpon>PopUpResultMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="CustomControl\DigitTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\DigitTextBox.Designer.cs">
+      <DependentUpon>DigitTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\RealNumberTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\RealNumberTextBox.Designer.cs">
+      <DependentUpon>RealNumberTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\CooperativeCompanyInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\CooperativeCompanyInfoMgt.Designer.cs">
+      <DependentUpon>CooperativeCompanyInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\CooperativeEmployeeInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\CooperativeEmployeeInfoMgt.Designer.cs">
+      <DependentUpon>CooperativeEmployeeInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\CustomerInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\CustomerInfoMgt.Designer.cs">
+      <DependentUpon>CustomerInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpAddCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpAddCustomerInfo.Designer.cs">
+      <DependentUpon>PopUpAddCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpCheckSameCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpCheckSameCustomer.Designer.cs">
+      <DependentUpon>PopUpCheckSameCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpSearchAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpSearchAddress.Designer.cs">
+      <DependentUpon>PopUpSearchAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Promotion.cs" />
+    <Compile Include="DocumentMgt\DocumentTemplateMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentMgt\DocumentTemplateMgt.Designer.cs">
+      <DependentUpon>DocumentTemplateMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentMgt\VoucherPrintOutMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentMgt\VoucherPrintOutMgt.Designer.cs">
+      <DependentUpon>VoucherPrintOutMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDocumentForm.Designer.cs">
+      <DependentUpon>InvoiceDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceManageForm.Designer.cs">
+      <DependentUpon>InvoiceManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\PopUpInvoiceDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\PopUpInvoiceDocumentForm.Designer.cs">
+      <DependentUpon>PopUpInvoiceDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginInfo.cs" />
+    <Compile Include="Login\SsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\SsLogin.Designer.cs">
+      <DependentUpon>SsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ProductMgt\CostPriceMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\CostPriceMgt.Designer.cs">
+      <DependentUpon>CostPriceMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\OptionMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\OptionMgt.Designer.cs">
+      <DependentUpon>OptionMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\PopUpAddProductInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\PopUpAddProductInfo.Designer.cs">
+      <DependentUpon>PopUpAddProductInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\ProductBasicInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\ProductBasicInfoMgt.Designer.cs">
+      <DependentUpon>ProductBasicInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\ProductCategoryMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\ProductCategoryMgt.Designer.cs">
+      <DependentUpon>ProductCategoryMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\ProductDetailInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\ProductDetailInfoMgt.Designer.cs">
+      <DependentUpon>ProductDetailInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgt\ProductPromotionMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMgt\ProductPromotionMgt.designer.cs">
+      <DependentUpon>ProductPromotionMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PaymentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PaymentReportForm.Designer.cs">
+      <DependentUpon>PaymentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SettlementReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SettlementReportForm.Designer.cs">
+      <DependentUpon>SettlementReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SettlementSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SettlementSummaryReportForm.Designer.cs">
+      <DependentUpon>SettlementSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UnpaidReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\UnpaidReportForm.Designer.cs">
+      <DependentUpon>UnpaidReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpAccountPayableMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpAccountPayableMgt.Designer.cs">
+      <DependentUpon>PopUpAccountPayableMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpCheckCutOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpCheckCutOff.Designer.cs">
+      <DependentUpon>PopUpCheckCutOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpSearchCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMgt\PopUpSearchCustomerInfo.Designer.cs">
+      <DependentUpon>PopUpSearchCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpDepositMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpDepositMgt.Designer.cs">
+      <DependentUpon>PopUpDepositMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpInsertReservationFromPurchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpInsertReservationFromPurchaseList.Designer.cs">
+      <DependentUpon>PopUpInsertReservationFromPurchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpRemitterList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpRemitterList.Designer.cs">
+      <DependentUpon>PopUpRemitterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpSearchReservationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PopUpSearchReservationInfo.Designer.cs">
+      <DependentUpon>PopUpSearchReservationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\PurchaseListMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\PurchaseListMgt.Designer.cs">
+      <DependentUpon>PurchaseListMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationDetailInfoMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationDetailInfoMgt.Designer.cs">
+      <DependentUpon>ReservationDetailInfoMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationDetailMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationDetailMgt.Designer.cs">
+      <DependentUpon>ReservationDetailMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\ReservationList.Designer.cs">
+      <DependentUpon>ReservationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\UnpaidExpenseMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMgt\UnpaidExpenseMgt.Designer.cs">
+      <DependentUpon>UnpaidExpenseMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMgt\VOReservationDetail.cs" />
+    <Compile Include="SettlementMgt\SettlementCancellationMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettlementMgt\SettlementCancellationMgmt.Designer.cs">
+      <DependentUpon>SettlementCancellationMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettlementMgt\SettlementMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettlementMgt\SettlementMgt.Designer.cs">
+      <DependentUpon>SettlementMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettlementMgt\SettlementProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettlementMgt\SettlementProgressBar.Designer.cs">
+      <DependentUpon>SettlementProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TripERPmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripERPmain.Designer.cs">
+      <DependentUpon>TripERPmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountMgt\AccountTitleMgmt.resx">
+      <DependentUpon>AccountTitleMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMgt\CurrentAccountDepositWithdrawalMgmt.resx">
+      <DependentUpon>CurrentAccountDepositWithdrawalMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMgt\CurrentAccountMgmt.resx">
+      <DependentUpon>CurrentAccountMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMgt\FinancialIncomeExpense.rdlc" />
+    <EmbeddedResource Include="AccountMgt\FinancialIncomeExpenseReportMgmt.resx">
+      <DependentUpon>FinancialIncomeExpenseReportMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMgt\ReceiptsPaymentReport.rdlc" />
+    <EmbeddedResource Include="AccountMgt\ReceiptsPaymentReportMgmt.resx">
+      <DependentUpon>ReceiptsPaymentReportMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMgt\SlipMgmt.resx">
+      <DependentUpon>SlipMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\AirportInfoMgt.resx">
+      <DependentUpon>AirportInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\CommonCodeMgt.resx">
+      <DependentUpon>CommonCodeMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\CurrencyCodeMgt.resx">
+      <DependentUpon>CurrencyCodeMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\DepositNotificationForm.resx">
+      <DependentUpon>DepositNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\EmployeeInfoMgt.resx">
+      <DependentUpon>EmployeeInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\EmployeeMenuInfoMgt.resx">
+      <DependentUpon>EmployeeMenuInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\ExchangeRateMgt.resx">
+      <DependentUpon>ExchangeRateMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\MenuInfoMgt.resx">
+      <DependentUpon>MenuInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\MessageTemplateMgt.resx">
+      <DependentUpon>MessageTemplateMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\NationCodeMgt.resx">
+      <DependentUpon>NationCodeMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\PopUpSendMail.resx">
+      <DependentUpon>PopUpSendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\PopUpSendSMS.resx">
+      <DependentUpon>PopUpSendSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\PurchaseListFileInfoMgt.resx">
+      <DependentUpon>PurchaseListFileInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\RateMgt.resx">
+      <DependentUpon>RateMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\RegionCodeMgmt.resx">
+      <DependentUpon>RegionCodeMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\SendHistoryList.resx">
+      <DependentUpon>SendHistoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonTask\UserAccountMgt.resx">
+      <DependentUpon>UserAccountMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PopUpResultMessage.resx">
+      <DependentUpon>PopUpResultMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\CooperativeCompanyInfoMgt.resx">
+      <DependentUpon>CooperativeCompanyInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\CooperativeEmployeeInfoMgt.resx">
+      <DependentUpon>CooperativeEmployeeInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\CustomerInfoMgt.resx">
+      <DependentUpon>CustomerInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\PopUpAddCustomerInfo.resx">
+      <DependentUpon>PopUpAddCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\PopUpCheckSameCustomer.resx">
+      <DependentUpon>PopUpCheckSameCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\PopUpSearchAddress.resx">
+      <DependentUpon>PopUpSearchAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentMgt\DocumentTemplateMgt.resx">
+      <DependentUpon>DocumentTemplateMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentMgt\VoucherPrintOutMgt.resx">
+      <DependentUpon>VoucherPrintOutMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceDocumentForm.rdlc" />
+    <EmbeddedResource Include="Invoice\InvoiceDocumentForm.resx">
+      <DependentUpon>InvoiceDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceManageForm.resx">
+      <DependentUpon>InvoiceManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\PopUpInvoiceDocumentForm.resx">
+      <DependentUpon>PopUpInvoiceDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\SsLogin.resx">
+      <DependentUpon>SsLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\TripERP.AccountMgt.AccountTitleMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.AccountMgt.CurrentAccountDepositWithdrawalMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.AccountMgt.CurrentAccountMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.AccountMgt.ReceiptsPaymentReportMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.AccountMgt.SlipMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Common.PopUpResultMessage.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.AirportInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.CommonCodeMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.CurrencyCodeMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.DepositNotificationForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.EmployeeInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.EmployeeMenuInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.ExchangeRateMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.MenuInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.MessageTemplateMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.NationCodeMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.PopUpSendMail.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.PopUpSendSMS.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.PurchaseListFileInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.RateMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.RegionCodeMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.SendHistoryList.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CommonTask.UserAccountMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.CooperativeCompanyInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.CooperativeEmployeeInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.CustomerInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.PopUpAddCustomerInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.PopUpCheckSameCustomer.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.PopUpSearchAddress.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.CustomerMgt.PopUpSearchCustomerInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Dashboard.DashboardForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.DocumentMgt.DocumentTemplateMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.DocumentMgt.VoucherPrintOutMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Invoice.InvoiceDocumentForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Invoice.InvoiceManageForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Login.SsLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.CostPriceMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.OptionMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.PopUpAddProductInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.ProductBasicInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.ProductCategoryMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.ProductDetailInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ProductMgt.ProductPromotionMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Report.FinancialIncomeExpenseReportMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Report.PaymentReportForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Report.SettlementReportForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Report.SettlementSummaryReportForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.Report.UnpaidReportForm.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpAccountPayableMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpCheckCutOff.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpDepositMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpInsertReservationFromPurchaseList.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpRemitterList.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpSearchReservationInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PopUpUnpaidCostMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.PurchaseListMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.ReservationDetailInfoMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.ReservationDetailMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.ReservationList.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.ReservationMgt.UnpaidExpenseMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.SettlementMgt.SettlementCancellationMgmt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.SettlementMgt.SettlementMgt.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.SettlementMgt.SettlementProgressBar.resources" />
+    <EmbeddedResource Include="obj\Debug\TripERP.TripERPmain.resources" />
+    <EmbeddedResource Include="ProductMgt\CostPriceMgt.resx">
+      <DependentUpon>CostPriceMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\OptionMgt.resx">
+      <DependentUpon>OptionMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\PopUpAddProductInfo.resx">
+      <DependentUpon>PopUpAddProductInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\ProductBasicInfoMgt.resx">
+      <DependentUpon>ProductBasicInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\ProductCategoryMgt.resx">
+      <DependentUpon>ProductCategoryMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\ProductDetailInfoMgt.resx">
+      <DependentUpon>ProductDetailInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMgt\ProductPromotionMgt.resx">
+      <DependentUpon>ProductPromotionMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PaymentReportForm.resx">
+      <DependentUpon>PaymentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SettlementReportForm.resx">
+      <DependentUpon>SettlementReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SettlementSummary.rdlc" />
+    <EmbeddedResource Include="Report\SettlementSummaryReportForm.resx">
+      <DependentUpon>SettlementSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UnpaidReportForm.resx">
+      <DependentUpon>UnpaidReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UnpaidState.rdlc" />
+    <EmbeddedResource Include="ReservationMgt\PopUpAccountPayableMgt.resx">
+      <DependentUpon>PopUpAccountPayableMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpCheckCutOff.resx">
+      <DependentUpon>PopUpCheckCutOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMgt\PopUpSearchCustomerInfo.resx">
+      <DependentUpon>PopUpSearchCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpDepositMgt.resx">
+      <DependentUpon>PopUpDepositMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpInsertReservationFromPurchaseList.resx">
+      <DependentUpon>PopUpInsertReservationFromPurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpRemitterList.resx">
+      <DependentUpon>PopUpRemitterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpSearchReservationInfo.resx">
+      <DependentUpon>PopUpSearchReservationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\PopUpUnpaidCostMgt.resx" />
+    <EmbeddedResource Include="ReservationMgt\PurchaseListMgt.resx">
+      <DependentUpon>PurchaseListMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\ReservationDetailInfoMgt.resx">
+      <DependentUpon>ReservationDetailInfoMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\ReservationDetailMgt.resx">
+      <DependentUpon>ReservationDetailMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\ReservationList.resx">
+      <DependentUpon>ReservationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMgt\UnpaidExpenseMgt.resx">
+      <DependentUpon>UnpaidExpenseMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettlementMgt\SettlementCancellationMgmt.resx">
+      <DependentUpon>SettlementCancellationMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettlementMgt\SettlementMgt.resx">
+      <DependentUpon>SettlementMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettlementMgt\SettlementProgressBar.resx">
+      <DependentUpon>SettlementProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripERPmain.resx">
+      <DependentUpon>TripERPmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AccountMgt\FinancialIncomeExpense.xsc">
+      <DependentUpon>FinancialIncomeExpense.xsd</DependentUpon>
+    </None>
+    <None Include="AccountMgt\FinancialIncomeExpense.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinancialIncomeExpense1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountMgt\FinancialIncomeExpense.xss">
+      <DependentUpon>FinancialIncomeExpense.xsd</DependentUpon>
+    </None>
+    <None Include="AccountMgt\ReceiptsPaymentReport.xsc">
+      <DependentUpon>ReceiptsPaymentReport.xsd</DependentUpon>
+    </None>
+    <None Include="AccountMgt\ReceiptsPaymentReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceiptsPaymentReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountMgt\ReceiptsPaymentReport.xss">
+      <DependentUpon>ReceiptsPaymentReport.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\Debug.egg" />
+    <None Include="bin\Debug\TripERP.exe.config" />
+    <None Include="Invoice\InvoiceDataSet.xsc">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Invoice\InvoiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Invoice\InvoiceDataSet.xss">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\RdlCompile.cache" />
+    <None Include="obj\Debug\RdlCompile.compiled" />
+    <None Include="obj\Debug\TripERP.csproj.CopyComplete" />
+    <None Include="obj\Debug\TripERP.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\TripERP.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\TripERP.csproj.ResolveComReference.cache" />
+    <None Include="obj\Debug\TripERP.csprojAssemblyReference.cache" />
+    <None Include="obj\x86\Release\TripERP.csproj.ResolveComReference.cache" />
+    <None Include="obj\x86\Release\TripERP.csprojAssemblyReference.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report\SettlementReportDatas.xsc">
+      <DependentUpon>SettlementReportDatas.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SettlementReportDatas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettlementReportDatas1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\SettlementReportDatas.xss">
+      <DependentUpon>SettlementReportDatas.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Report\SettlementState.rdlc" />
+    <None Include="Report\SettlementSummaryReportDatas.xsc">
+      <DependentUpon>SettlementSummaryReportDatas.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SettlementSummaryReportDatas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettlementSummaryReportDatas1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\SettlementSummaryReportDatas.xss">
+      <DependentUpon>SettlementSummaryReportDatas.xsd</DependentUpon>
+    </None>
+    <None Include="Report\UnpaidReportDatas.xsc">
+      <DependentUpon>UnpaidReportDatas.xsd</DependentUpon>
+    </None>
+    <None Include="Report\UnpaidReportDatas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnpaidReportDatas1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\UnpaidReportDatas.xss">
+      <DependentUpon>UnpaidReportDatas.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\G Bridge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\search_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AxInterop.DSOFramer.dll" />
+    <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\EnvDTE.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Content Include="bin\Debug\Guna.UI.dll" />
+    <Content Include="bin\Debug\Interop.DSOFramer.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\Linkhub.dll" />
+    <Content Include="bin\Debug\Linkhub.pdb" />
+    <Content Include="bin\Debug\MetroFramework.dll" />
+    <Content Include="bin\Debug\MetroFramework.Fonts.dll" />
+    <Content Include="bin\Debug\Microsoft.MSXML.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\MySql.Data.xml" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Popbill.dll" />
+    <Content Include="bin\Debug\Popbill.pdb" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\Renci.SshNet.dll" />
+    <Content Include="bin\Debug\Renci.SshNet.xml" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\TripERP.exe" />
+    <Content Include="bin\Debug\TripERP.pdb" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="Images\arrow_left.png" />
+    <Content Include="Images\arrow_right.png" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\G Bridge.ico" />
+    <Content Include="MetroFramework.txt" />
+    <Content Include="obj\Debug\Interop.DSOFramer.dll" />
+    <Content Include="obj\Debug\TempPE\AccountMgt.FinancialIncomeExpense1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\AccountMgt.ReceiptsPaymentReport1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TripERP.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TripERP.exe" />
+    <Content Include="obj\Debug\TripERP.pdb" />
+    <Content Include="obj\x86\Release\Interop.DSOFramer.dll" />
+    <Content Include="Resources\check.png" />
+    <Content Include="Resources\check_white.png" />
+    <Content Include="Resources\minus_white_30px.png" />
+    <Content Include="Resources\multiply.png" />
+    <Content Include="Resources\plus_white_30px.png" />
+    <Content Include="Resources\refresh.png" />
+    <None Include="Resources\Web_16x_32.bmp" />
+    <Content Include="Resources\추가.jpg" />
+    <Content Include="Resources\확인수락.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\x86\Debug\" />
+    <Folder Include="bin\x86\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeepCode.v.1.000\Popbill\Popbill.csproj">
+      <Project>{57f03b3e-c713-443a-ac04-90291b429204}</Project>
+      <Name>Popbill</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

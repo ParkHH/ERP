@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SettlementSummaryReportDatas" targetNamespace="http://tempuri.org/SettlementSummaryReportDatas.xsd" xmlns:mstns="http://tempuri.org/SettlementSummaryReportDatas.xsd" xmlns="http://tempuri.org/SettlementSummaryReportDatas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SettlementSummaryReportDatas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SettlementSummaryReportDatas" msprop:Generator_UserDSName="SettlementSummaryReportDatas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:string" minOccurs="0" />
+              <xs:element name="모객업체" msprop:Generator_ColumnVarNameInTable="column모객업체" msprop:Generator_ColumnPropNameInRow="모객업체" msprop:Generator_ColumnPropNameInTable="모객업체Column" msprop:Generator_UserColumnName="모객업체" type="xs:string" minOccurs="0" />
+              <xs:element name="수배처" msprop:Generator_ColumnVarNameInTable="column수배처" msprop:Generator_ColumnPropNameInRow="수배처" msprop:Generator_ColumnPropNameInTable="수배처Column" msprop:Generator_UserColumnName="수배처" type="xs:string" minOccurs="0" />
+              <xs:element name="인원수량" msprop:Generator_ColumnVarNameInTable="column인원수량" msprop:Generator_ColumnPropNameInRow="인원수량" msprop:Generator_ColumnPropNameInTable="인원수량Column" msprop:Generator_UserColumnName="인원수량" type="xs:string" minOccurs="0" />
+              <xs:element name="상품명" msprop:Generator_ColumnVarNameInTable="column상품명" msprop:Generator_ColumnPropNameInRow="상품명" msprop:Generator_ColumnPropNameInTable="상품명Column" msprop:Generator_UserColumnName="상품명" type="xs:string" minOccurs="0" />
+              <xs:element name="원화판매가" msprop:Generator_ColumnVarNameInTable="column원화판매가" msprop:Generator_ColumnPropNameInRow="원화판매가" msprop:Generator_ColumnPropNameInTable="원화판매가Column" msprop:Generator_UserColumnName="원화판매가" type="xs:string" minOccurs="0" />
+              <xs:element name="외화판매가" msprop:Generator_ColumnVarNameInTable="column외화판매가" msprop:Generator_ColumnPropNameInRow="외화판매가" msprop:Generator_ColumnPropNameInTable="외화판매가Column" msprop:Generator_UserColumnName="외화판매가" type="xs:string" minOccurs="0" />
+              <xs:element name="원화현지지급금" msprop:Generator_ColumnVarNameInTable="column원화현지지급금" msprop:Generator_ColumnPropNameInRow="원화현지지급금" msprop:Generator_ColumnPropNameInTable="원화현지지급금Column" msprop:Generator_UserColumnName="원화현지지급금" type="xs:string" minOccurs="0" />
+              <xs:element name="외화현지지급금" msprop:Generator_ColumnVarNameInTable="column외화현지지급금" msprop:Generator_ColumnPropNameInRow="외화현지지급금" msprop:Generator_ColumnPropNameInTable="외화현지지급금Column" msprop:Generator_UserColumnName="외화현지지급금" type="xs:string" minOccurs="0" />
+              <xs:element name="원화수수료" msprop:Generator_ColumnVarNameInTable="column원화수수료" msprop:Generator_ColumnPropNameInRow="원화수수료" msprop:Generator_ColumnPropNameInTable="원화수수료Column" msprop:Generator_UserColumnName="원화수수료" type="xs:string" minOccurs="0" />
+              <xs:element name="GB수익금" msprop:Generator_ColumnVarNameInTable="columnGB수익금" msprop:Generator_ColumnPropNameInRow="GB수익금" msprop:Generator_ColumnPropNameInTable="GB수익금Column" msprop:Generator_UserColumnName="GB수익금" type="xs:string" minOccurs="0" />
+              <xs:element name="GB수익률" msprop:Generator_ColumnVarNameInTable="columnGB수익률" msprop:Generator_ColumnPropNameInRow="GB수익률" msprop:Generator_ColumnPropNameInTable="GB수익률Column" msprop:Generator_UserColumnName="GB수익률" type="xs:string" minOccurs="0" />
+              <xs:element name="정산일" msprop:Generator_ColumnVarNameInTable="column정산일" msprop:Generator_ColumnPropNameInRow="정산일" msprop:Generator_ColumnPropNameInTable="정산일Column" msprop:Generator_UserColumnName="정산일" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceDataSet" targetNamespace="http://tempuri.org/InvoiceDataSet.xsd" xmlns:mstns="http://tempuri.org/InvoiceDataSet.xsd" xmlns="http://tempuri.org/InvoiceDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoiceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InvoiceDataSet" msprop:Generator_UserDSName="InvoiceDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="날짜" msprop:Generator_ColumnVarNameInTable="column날짜" msprop:Generator_ColumnPropNameInRow="날짜" msprop:Generator_ColumnPropNameInTable="날짜Column" msprop:Generator_UserColumnName="날짜" type="xs:string" minOccurs="0" />
+              <xs:element name="예약자명" msprop:Generator_ColumnVarNameInTable="column예약자명" msprop:Generator_ColumnPropNameInRow="예약자명" msprop:Generator_ColumnPropNameInTable="예약자명Column" msprop:Generator_UserColumnName="예약자명" type="xs:string" minOccurs="0" />
+              <xs:element name="내용" msprop:Generator_ColumnVarNameInTable="column내용" msprop:Generator_ColumnPropNameInRow="내용" msprop:Generator_ColumnPropNameInTable="내용Column" msprop:Generator_UserColumnName="내용" type="xs:string" minOccurs="0" />
+              <xs:element name="구분" msprop:Generator_ColumnVarNameInTable="column구분" msprop:Generator_ColumnPropNameInRow="구분" msprop:Generator_ColumnPropNameInTable="구분Column" msprop:Generator_UserColumnName="구분" type="xs:string" minOccurs="0" />
+              <xs:element name="단가" msprop:Generator_ColumnVarNameInTable="column단가" msprop:Generator_ColumnPropNameInRow="단가" msprop:Generator_ColumnPropNameInTable="단가Column" msprop:Generator_UserColumnName="단가" type="xs:string" minOccurs="0" />
+              <xs:element name="인원" msprop:Generator_ColumnVarNameInTable="column인원" msprop:Generator_ColumnPropNameInRow="인원" msprop:Generator_ColumnPropNameInTable="인원Column" msprop:Generator_UserColumnName="인원" type="xs:string" minOccurs="0" />
+              <xs:element name="판매가" msprop:Generator_ColumnVarNameInTable="column판매가" msprop:Generator_ColumnPropNameInRow="판매가" msprop:Generator_ColumnPropNameInTable="판매가Column" msprop:Generator_UserColumnName="판매가" type="xs:string" minOccurs="0" />
+              <xs:element name="합계" msprop:Generator_ColumnVarNameInTable="column합계" msprop:Generator_ColumnPropNameInRow="합계" msprop:Generator_ColumnPropNameInTable="합계Column" msprop:Generator_UserColumnName="합계" type="xs:string" minOccurs="0" />
+              <xs:element name="비고" msprop:Generator_ColumnVarNameInTable="column비고" msprop:Generator_ColumnPropNameInRow="비고" msprop:Generator_ColumnPropNameInTable="비고Column" msprop:Generator_UserColumnName="비고" type="xs:string" minOccurs="0" />
+              <xs:element name="기준환율" msprop:Generator_ColumnVarNameInTable="column기준환율" msprop:Generator_ColumnPropNameInRow="기준환율" msprop:Generator_ColumnPropNameInTable="기준환율Column" msprop:Generator_UserColumnName="기준환율" type="xs:string" minOccurs="0" />
+              <xs:element name="예약번호" msprop:Generator_ColumnVarNameInTable="column예약번호" msprop:Generator_ColumnPropNameInRow="예약번호" msprop:Generator_ColumnPropNameInTable="예약번호Column" msprop:Generator_UserColumnName="예약번호" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

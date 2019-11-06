@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripERP", "TripERP\TripERP.csproj", "{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57F03B3E-C713-443A-AC04-90291B429204} = {57F03B3E-C713-443A-AC04-90291B429204}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill", "..\DeepCode.v.1.000\Popbill\Popbill.csproj", "{57F03B3E-C713-443A-AC04-90291B429204}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TripERP_Production", "TripERP_Production\TripERP_Production.vdproj", "{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Debug|x86.ActiveCfg = Debug|x86
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Debug|x86.Build.0 = Debug|x86
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Release|x86.ActiveCfg = Release|x86
+		{886451C1-DEEE-44D1-A8AE-7985CDD81FC2}.Release|x86.Build.0 = Release|x86
+		{57F03B3E-C713-443A-AC04-90291B429204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Debug|x86.Build.0 = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Release|x86.ActiveCfg = Release|Any CPU
+		{57F03B3E-C713-443A-AC04-90291B429204}.Release|x86.Build.0 = Release|Any CPU
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Debug|Any CPU.ActiveCfg = Debug
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Debug|Any CPU.Build.0 = Debug
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Debug|x86.ActiveCfg = Debug
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Release|Any CPU.ActiveCfg = Release
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Release|Any CPU.Build.0 = Release
+		{7C54D25B-0C7E-4ADC-92D1-6EE57BF39454}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E53A0158-391A-4AB2-94DA-E81E2F61EE75}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinancialIncomeExpense" targetNamespace="http://tempuri.org/FinancialIncomeExpense.xsd" xmlns:mstns="http://tempuri.org/FinancialIncomeExpense.xsd" xmlns="http://tempuri.org/FinancialIncomeExpense.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinancialIncomeExpense" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FinancialIncomeExpense" msprop:Generator_UserDSName="FinancialIncomeExpense">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NomalAccount" msprop:Generator_TableClassName="NomalAccountDataTable" msprop:Generator_TableVarName="tableNomalAccount" msprop:Generator_TablePropName="NomalAccount" msprop:Generator_RowDeletingName="NomalAccountRowDeleting" msprop:Generator_RowChangingName="NomalAccountRowChanging" msprop:Generator_RowEvHandlerName="NomalAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="NomalAccountRowDeleted" msprop:Generator_UserTableName="NomalAccount" msprop:Generator_RowChangedName="NomalAccountRowChanged" msprop:Generator_RowEvArgName="NomalAccountRowChangeEvent" msprop:Generator_RowClassName="NomalAccountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="보통예금은행명" msprop:Generator_ColumnVarNameInTable="column보통예금은행명" msprop:Generator_ColumnPropNameInRow="보통예금은행명" msprop:Generator_ColumnPropNameInTable="보통예금은행명Column" msprop:Generator_UserColumnName="보통예금은행명" type="xs:string" minOccurs="0" />
+              <xs:element name="계좌구분" msprop:Generator_ColumnVarNameInTable="column계좌구분" msprop:Generator_ColumnPropNameInRow="계좌구분" msprop:Generator_ColumnPropNameInTable="계좌구분Column" msprop:Generator_UserColumnName="계좌구분" type="xs:string" minOccurs="0" />
+              <xs:element name="통화코드" msprop:Generator_ColumnVarNameInTable="column통화코드" msprop:Generator_ColumnPropNameInRow="통화코드" msprop:Generator_ColumnPropNameInTable="통화코드Column" msprop:Generator_UserColumnName="통화코드" type="xs:string" minOccurs="0" />
+              <xs:element name="전일잔액" msprop:Generator_ColumnVarNameInTable="column전일잔액" msprop:Generator_ColumnPropNameInRow="전일잔액" msprop:Generator_ColumnPropNameInTable="전일잔액Column" msprop:Generator_UserColumnName="전일잔액" type="xs:string" minOccurs="0" />
+              <xs:element name="입금" msprop:Generator_ColumnVarNameInTable="column입금" msprop:Generator_ColumnPropNameInRow="입금" msprop:Generator_ColumnPropNameInTable="입금Column" msprop:Generator_UserColumnName="입금" type="xs:string" minOccurs="0" />
+              <xs:element name="출금" msprop:Generator_ColumnVarNameInTable="column출금" msprop:Generator_ColumnPropNameInRow="출금" msprop:Generator_ColumnPropNameInTable="출금Column" msprop:Generator_UserColumnName="출금" type="xs:string" minOccurs="0" />
+              <xs:element name="금일잔액" msprop:Generator_ColumnVarNameInTable="column금일잔액" msprop:Generator_ColumnPropNameInRow="금일잔액" msprop:Generator_ColumnPropNameInTable="금일잔액Column" msprop:Generator_UserColumnName="금일잔액" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="외화코드" msprop:Generator_ColumnVarNameInTable="column외화코드" msprop:Generator_ColumnPropNameInRow="외화코드" msprop:Generator_ColumnPropNameInTable="외화코드Column" msprop:Generator_UserColumnName="외화코드" type="xs:string" minOccurs="0" />
+              <xs:element name="전일금액합계" msprop:Generator_ColumnVarNameInTable="column전일금액합계" msprop:Generator_ColumnPropNameInRow="전일금액합계" msprop:Generator_ColumnPropNameInTable="전일금액합계Column" msprop:Generator_UserColumnName="전일금액합계" type="xs:string" minOccurs="0" />
+              <xs:element name="금일입금액합계" msprop:Generator_ColumnVarNameInTable="column금일입금액합계" msprop:Generator_ColumnPropNameInRow="금일입금액합계" msprop:Generator_ColumnPropNameInTable="금일입금액합계Column" msprop:Generator_UserColumnName="금일입금액합계" type="xs:string" minOccurs="0" />
+              <xs:element name="금일출금액합계" msprop:Generator_ColumnVarNameInTable="column금일출금액합계" msprop:Generator_ColumnPropNameInRow="금일출금액합계" msprop:Generator_ColumnPropNameInTable="금일출금액합계Column" msprop:Generator_UserColumnName="금일출금액합계" type="xs:string" minOccurs="0" />
+              <xs:element name="금일잔액합계" msprop:Generator_ColumnVarNameInTable="column금일잔액합계" msprop:Generator_ColumnPropNameInRow="금일잔액합계" msprop:Generator_ColumnPropNameInTable="금일잔액합계Column" msprop:Generator_UserColumnName="금일잔액합계" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
