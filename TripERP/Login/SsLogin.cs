@@ -89,8 +89,8 @@ namespace TripERP.Login
             bool checkMACResult = checkMACAddress(id, password);
 
             // Login 요청 URL, adminPage로 돌릴시 url 변경 ↓↓↓
-            string url = "http://gbrdg111.vps.phps.kr:5000/admin/login";
-            //string url = "http://localhost:5000/admin/login";
+            string url = "";
+            //string url = "";
 
             string CMPN_NO = "";
             string CMPN_NM = "";
