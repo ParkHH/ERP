@@ -17,9 +17,7 @@ namespace TripERP.Common
     class DbHelper
     {
         // localhost
-        //static public string _connectionString = "Server=localhost;Database=db_gbridge_trip;Uid=root;Pwd=skekdns7;Respect Binary Flags=false;charset=utf8;";
-
-        // deepcore301.vps.phps.kr
+       
         
 
         static public int ExecuteNonQuery(string query)
