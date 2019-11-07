@@ -147,11 +147,11 @@ namespace TripERP.DocumentMgt
             // 문서관리 --> 바우처인쇄로 넘어온 경우
             if (!_IS_FROM_RSVT_DTL) {
                 // SFTP로 서버의 바우처 양식 Download후, 열기
-                const string Host = "gbrdg111.vps.phps.kr";
-                const int Port = 15342;
-                const string Username = "gbridge";
-                const string Password = "1q2w3e$$";
-                const string Source = "/home/gbridge/template/Voucher";
+                const string Host = "";
+                const int Port = ;
+                const string Username = "";
+                const string Password = "";
+                const string Source = "";
                 //const string Destination = @"c:\TripERP";
 
                 // 다운로드 경로 : TripERP 프로그램 아래의 Downloads 폴더 안
